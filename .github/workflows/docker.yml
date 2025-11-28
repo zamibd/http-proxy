@@ -35,7 +35,7 @@ jobs:
         with:
           images: ${{ secrets.DOCKER_USERNAME }}/http-proxy
           tags: |
-            type=ref,event=latest
+            type=raw,value=latest
 
       - name: Build and push
         uses: docker/build-push-action@v5
