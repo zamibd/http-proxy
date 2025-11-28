@@ -1,0 +1,25 @@
+# Binaries
+http-proxy
+*.exe
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Git
+.git/
+.gitignore
+
+# Documentation
+README.md
+LICENSE
+
+# Test files
+*_test.go
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore

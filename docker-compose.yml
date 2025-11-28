@@ -1,0 +1,16 @@
+ 
+services:
+  http-proxy:
+    image: imzami/http-proxy:latest
+    ports:
+      - "8080:8080"
+    restart: always
+    environment:
+      - PROXY_PORT=8080
+      - TARGET_URL=http://example.com # Replace with your target URL
+      - LOG_LEVEL=info # Set log level (e.g., debug, info, warn, error)
+    networks:
+      - proxy-network
+networks:
+  proxy-network:
+    driver: bridge
